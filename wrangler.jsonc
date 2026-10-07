@@ -3,17 +3,21 @@
   "name": "srl-discord-source-bridge",
   "main": "src/index.ts",
   "compatibility_date": "2026-08-26",
+  "keep_vars": true,
   "triggers": {
-    "crons": ["0 * * * *"],
+    "crons": ["0 * * * *"]
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "srl-discord-source-handoff",
-      "migrations_dir": "migrations",
-    },
+      "database_id": "96388bb2-c608-4595-b358-f64a5598f370",
+      "migrations_dir": "migrations"
+    }
   ],
   "vars": {
-    "HANDOFF_TTL_SECONDS": "1200",
-  },
+    "DISCORD_APPLICATION_ID": "1555389922574205049",
+    "DISCORD_PUBLIC_KEY": "aa562c31ce1d35465791752593be628d4e72754db29e03f2faaefb88f7d36751",
+    "HANDOFF_TTL_SECONDS": "1200"
+  }
 }
